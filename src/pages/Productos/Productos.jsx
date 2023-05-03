@@ -1,8 +1,6 @@
 import { SquareIcon } from "../../components/Icons"
 import { Filters } from "./components/"
 
-
-
 const PRODUCTOS = [
     {
         id: 1,
@@ -78,12 +76,10 @@ const PRODUCTOS = [
     }
 ]
 
-
-
 function Productos () {
     return (
         <div className="py-10">
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 pt-10">
                 <h2 className="text-5xl font-black">Productos</h2>
                 <p className="text-2xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis esse odit vero totam numquam odio exercitationem in consectetur omnis, at quasi, expedita fugiat officiis minima aspernatur facilis laboriosam qui dolorum.</p>
             </div>
