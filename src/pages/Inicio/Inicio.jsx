@@ -5,7 +5,7 @@ function Inicio () {
         <>
             <InicioTitleCard
                 className='items-center'
-                title='Titulo 1'
+                title={<h2 className="text-5xl font-black">Titulo 1</h2>}
                 button={<button style={{ backgroundColor: '#807d7d' }} className="bg-gray-300 w-36 h-12 rounded-xl text-3xl font-extrabold">CTA</button>}
                 image='https://placehold.co/320x420'
                 style={{ backgroundColor: '#d9d9d9' }}
@@ -14,7 +14,7 @@ function Inicio () {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquam ad reprehenderit dolores esse! Nisi saepe quidem delectus autem porro, nihil quibusdam tempore, ipsa placeat accusamus deserunt eveniet dolorem amet.
             </InicioTitleCard>
             <InicioTitleCard
-                title='Titulo 2'
+                title={<h2 className="text-3xl font-black">Titulo 2</h2>}
             >
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio voluptatem eos amet reiciendis quidem. Provident, repellat esse optio ipsa ratione corrupti culpa voluptatem dolorum commodi nulla rerum inventore. Voluptatem, necessitatibus.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquam ad reprehenderit dolores esse! Nisi saepe quidem delectus autem porro, nihil quibusdam tempore, ipsa placeat accusamus deserunt eveniet dolorem amet.
