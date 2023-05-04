@@ -5,7 +5,7 @@ import { SlLocationPin } from 'react-icons/sl'
 
 const Contacto = () => {
     return (
-        <div className='flex flex-col items-center my-5'>
+        <div className='flex flex-col items-center my-5 px-20'>
             <div className='flex flex-col items-center md:items-start gap-3 mb-3 w-full'>
                 <h1 className='text-center font-bold text-2xl'>Contacto</h1>
                 <p className='text-sm'>Lorem ipsum dolor sit amet consectetur. Imperdiet id in blandit accumsan facilisis scelerisque ornare morbi orci. At nunc volutpat viverra in mollis ut.</p>
