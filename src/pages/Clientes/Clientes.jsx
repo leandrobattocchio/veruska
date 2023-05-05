@@ -6,10 +6,10 @@ const clientes = [{ name: "Lorem", action: "Lorem" }, { name: "Lorem", action: "
 const preguntas = [{ id: 1 }]
 function Clientes() {
     return (
-        <div className="w-full px-5 md:px-20 flex flex-col items-center my-10">
+        <div className="w-full px-5 md:px-0 flex flex-col items-center my-10">
             <div className="flex flex-col items-center md:items-start gap-4">
                 <h1 className="text-3xl font-bold">Clientes</h1>
-                <p className="text-center md:text-start">Lorem ipsum dolor sit amet consectetur. Imperdiet id in blandit accumsan facilisis scelerisque ornare morbi orci. At nunc volutpat viverra in mollis ut odio nulla. Cursus amet et dui.</p>
+                <p className="text-center md:text-start w-full">Lorem ipsum dolor sit amet consectetur. Imperdiet id in blandit accumsan facilisis scelerisque ornare morbi orci. At nunc volutpat viverra in mollis ut odio nulla. Cursus amet et dui.</p>
             </div>
             <p className="text-xl md:text-3xl font-bold my-10">Que dicen nuestros clientes</p>
             <div className="mb-40 w-full">
@@ -17,8 +17,8 @@ function Clientes() {
                     <div className="hidden md:flex gap-5">
                         {clientes.map((client) =>
                             <div className="flex flex-col items-start gap-5" key={client.action}>
-                                <div className="px-4 py-10 border-2 rounded-3xl border-black relative">
-                                    <p className="text-sm">Lorem ipsum dolor sit amet consectetur. Quam velit cras lacus tempus nunc eget quis aliquam quis. Egestas faucibus magna leo iaculis ultrices quis est sed. Scelerisque aliquam mattis cras nascetur elit.</p>
+                                <div className="p-7 border-2 rounded-3xl border-black relative">
+                                    <p className="text-xs">Lorem ipsum dolor sit amet consectetur. Quam velit cras lacus tempus nunc eget quis aliquam quis. Egestas faucibus magna leo iaculis ultrices quis est sed. Scelerisque aliquam mattis cras nascetur elit.</p>
                                     <div className="absolute bg-white h-1.5 -bottom-1  left-5" style={{ width: '2.35rem' }}></div>
                                     <div className="absolute bg-black h-7 w-0.5 -bottom-7 mb-1 rounded-s-2xl left-7 -rotate-45" style={{ borderTopRightRadius: '1rem', borderBottomLeftRadius: '1rem' }}></div>
                                     <div className="absolute bg-black h-7 w-0.5 -bottom-7 mb-1 rounded-e-xl rounded-r-xl left-12 rotate-45" style={{ borderTopLeftRadius: '1rem', borderBottomRightRadius: '1rem' }}></div>
@@ -71,7 +71,7 @@ function Clientes() {
                     <p className="text-4xl font-extrabold hidden md:inline-block">+99</p>
                 </div>
             </div>
-            <p className="text-2xl font-bold my-10">Preguntas frecuentes</p>
+            <p className="text-3xl font-bold my-10">Preguntas frecuentes</p>
             <div className="flex w-full gap-10">
                 <div className="w-1/3 md:flex flex-col gap-3 hidden">
                     {preguntas.map((p) =>

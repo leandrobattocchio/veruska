@@ -1,7 +1,7 @@
 
 function Layout ({ children }) {
     return (
-        <div className="px-40">
+        <div className="md:px-20 px-5">
             {children}
         </div>
     )
