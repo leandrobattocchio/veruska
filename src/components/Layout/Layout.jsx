@@ -2,7 +2,7 @@ import './Layout.css'
 
 function Layout ({ children }) {
     return (
-        <div className="px-40 layout">
+        <div className="md:px-20 px-5">
             {children}
         </div>
     )

@@ -10,6 +10,7 @@ const Contacto = lazy(() => import('./pages/Contacto/Contacto'))
 const Inicio = lazy(() => import('./pages/Inicio/Inicio'))
 const Nosotros = lazy(() => import('./pages/Nosotros/Nosotros'))
 import './App.css'
+import './index.css'
 
 
 function App () {
