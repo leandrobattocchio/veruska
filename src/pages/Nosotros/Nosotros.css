@@ -1,0 +1,154 @@
+@media screen and (max-width: 480px) {
+    .nosotros h2 {
+        font-size: 2rem;
+    }
+
+    .nosotros p {
+        padding: 0 1rem 1rem 1rem;
+        font-size: 1.3rem;
+    }
+
+    .nosotros {
+        align-items: center;
+        padding: 0;
+    }
+
+    .nuestra-mision {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nuestra-mision div {
+        width: 100%;
+        align-items: center;
+    }
+
+    .nuestra-mision div p {
+        width: 100%;
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    .nuestra-mision-fotos {
+        padding: 1rem;
+    }
+
+    .nuestra-mision2 {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .nuestra-mision2 div:first-child {
+        padding: 1rem;
+    }
+
+    .nuestra-mision2 div:last-child {
+        align-items: center;
+        width: 100%;
+    }
+
+    .nuestra-mision2 div:last-child p {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .quienes-somos {
+        padding: 0;
+    }
+
+    .quienes-somos p {
+        width: 100%;
+        padding: 1rem;
+    }
+
+
+    .quienes-somos-img {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
+    }
+
+    .quienes-somos-img div {
+        padding: 1rem;
+    }
+
+    .quienes-somos-img div p {
+        padding: 0;
+        text-align: center;
+    }
+
+    .que-hacemos {
+        padding: 1rem;
+    }
+
+    .que-hacemos div {
+        gap: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+
+    .nosotros {
+        padding: 0;
+    }
+
+    .nuestra-mision {
+        flex-direction: column;
+    }
+
+    .first {
+        text-align: center;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .first p {
+        width: 100%;
+    }
+
+    .nuestra-mision2 {
+        flex-direction: column-reverse;
+    }
+
+    .nuestra-mision2 div:last-child {
+        text-align: center;
+        width: 100%;
+    }
+
+    .nuestra-mision2 div:last-child p,
+    .nuestra-mision2 div:last-child h4 {
+        width: 100%;
+    }
+
+    .quienes-somos p {
+        width: 100%;
+    }
+
+    .quienes-somos-img {
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .quienes-somos-img div {
+        padding: 1rem;
+    }
+
+    .que-hacemos {
+        padding: 6rem 2rem 2rem 2rem;
+    }
+
+    .que-hacemos div {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+
+
+    .que-hacemos div {
+        padding: 0.5rem;
+    }
+}

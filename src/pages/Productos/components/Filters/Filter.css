@@ -1,0 +1,14 @@
+.filters-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 769px) {
+    .filters {
+        display: none;
+    }
+
+    .filters-mobile {
+        display: block;
+    }
+
+}

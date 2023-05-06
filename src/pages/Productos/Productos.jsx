@@ -1,5 +1,6 @@
 import { SquareIcon } from "../../components/Icons"
-import { Filters } from "./components/"
+import { Filters, ProductosMoible } from "./components/"
+import './Productos.css'
 
 const PRODUCTOS = [
     {
@@ -78,16 +79,16 @@ const PRODUCTOS = [
 
 function Productos () {
     return (
-        <div className="py-10">
-            <div className="flex flex-col gap-3 pt-10">
+        <div className="py-4">
+            <div className="flex flex-col gap-3 pt-10 productos">
                 <h2 className="text-5xl font-black">Productos</h2>
-                <p className="text-2xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis esse odit vero totam numquam odio exercitationem in consectetur omnis, at quasi, expedita fugiat officiis minima aspernatur facilis laboriosam qui dolorum.</p>
+                <p className="text-2xl">Lorem ipsum dolor sit amet consecte, adipisicing elit. Debitis esse odit vero totam numquam odio exercitationem in consectetur omnis, at quasi, expedita fugiat officiis minima aspernatur facilis laboriosam qui dolorum.</p>
             </div>
-            <div className="flex flex-col gap-3 py-10">
+            <div className="flex flex-col gap-3 py-10 destacados">
                 <h3 className="text-3xl font-black text-center">Destacados</h3>
                 <p className="text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quis veritatis nihil explicabo quam incidunt culpa, ratione laboriosam odio corporis eaque quidem molestiae temporibus adipisci iste tempora nesciunt quod quas!</p>
             </div>
-            <div className="flex gap-4">
+            <div className="flex gap-4 productos-fotos">
                 <div>
                     <img src="https://placehold.co/900x700" />
                 </div>
@@ -105,13 +106,14 @@ function Productos () {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col gap-3 py-10">
+            <ProductosMoible />
+            <div className="flex flex-col gap-3 py-10 nuestros-productos">
                 <h3 className="text-3xl font-black text-center">Nuestros productos</h3>
-                <p className="text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quis veritatis nihil explicabo quam incidunt culpa, ratione laboriosam odio corporis eaque quidem molestiae temporibus adipisci iste tempora nesciunt quod quas!</p>
+                <p className="text-2xl">Lorem ipsum dolor sit amet consecte adipisicing elit. Quia quis veritatis nihil explicabo quam incidunt culpa, ratione laboriosam odio corporis eaque quidem molestiae temporibus adipisci iste tempora nesciunt quod quas!</p>
             </div>
             <div>
                 <Filters />
-                <div className="py-4" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '1rem' }}>
+                <div className="py-4 productos-precio" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '1rem' }}>
                     {PRODUCTOS.map((producto) => {
                         return (
                             <div key={producto.id} className="p-1 flex flex-col justify-center content-center">
