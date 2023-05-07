@@ -88,20 +88,20 @@ function Productos () {
                 <h3 className="text-3xl font-black text-center">Destacados</h3>
                 <p className="text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quis veritatis nihil explicabo quam incidunt culpa, ratione laboriosam odio corporis eaque quidem molestiae temporibus adipisci iste tempora nesciunt quod quas!</p>
             </div>
-            <div className="flex gap-4 productos-fotos">
-                <div>
-                    <img src="https://placehold.co/900x700" />
+            <div className="flex gap-4 productos-fotos w-full">
+                <div className="w-3/5">
+                    <img className="w-full" src="https://placehold.co/900x700" />
                 </div>
-                <div className="flex flex-col">
-                    <div className="flex">
-                        <img src="https://placehold.co/650x300" />
+                <div className="flex flex-col w-2/5">
+                    <div className="flex w-full object-cover">
+                        <img className="w-full" src="https://placehold.co/650x300" />
                     </div>
-                    <div className="flex gap-4 py-4">
+                    <div className="flex gap-4 pt-4 h-full">
                         <div>
-                            <img src="https://placehold.co/317x383" />
+                            <img className="h-full object-cover" src="https://placehold.co/317x383" />
                         </div>
                         <div>
-                            <img src="https://placehold.co/317x383" />
+                            <img className="h-full object-cover" src="https://placehold.co/317x383" />
                         </div>
                     </div>
                 </div>
