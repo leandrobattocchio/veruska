@@ -9,7 +9,7 @@ function Navbar () {
 
     return (
         <>
-            <div className="flex justify-around items-center h-16 mb-4 navbar">
+            <div className="flex justify-around items-center h-16 navbar">
                 <div className="flex justify-center items-center flex-row gap-2 text-xl">
                     <p className="py-2 px-1 font-bold text-sm" style={{ backgroundColor: '#d9d9d9' }}>LOGO</p>
                     <p className="font-black">NOMBRE</p>

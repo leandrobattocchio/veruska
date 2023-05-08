@@ -13,8 +13,8 @@ function NavbarCollapse () {
     }
 
     return (
-        <div className="flex flex-col" style={{ backgroundColor: '#e5e5e5' }}>
-            <div className="flex justify-between navbar-collapse p-4">
+        <div className="flex flex-col navbar-collapse" style={{ backgroundColor: '#e5e5e5' }}>
+            <div className="flex justify-between p-4">
                 <div className="flex gap-4">
                     <div className="flex items-center cursor-pointer" onClick={handleCollapse}>
                         <CollapseIcon />

@@ -113,7 +113,7 @@ function Productos () {
             </div>
             <div>
                 <Filters />
-                <div className="py-4 productos-precio" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '1rem' }}>
+                <div className="py-4 productos-precio">
                     {PRODUCTOS.map((producto) => {
                         return (
                             <div key={producto.id} className="p-1 flex flex-col justify-center content-center">
