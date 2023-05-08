@@ -2,9 +2,9 @@ import Accordion from "../../components/Accordion/Accordion"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-const clientes = [{ name: "Lorem", action: "Lorem" }, { name: "Lorem", action: "Lorem" }, { name: "Lorem", action: "Lorem" }]
+const clientes = [{ name: "Lorem", action: "Lorem1" }, { name: "Lorem", action: "Lorem2" }, { name: "Lorem", action: "Lorem3" }]
 const preguntas = [{ id: 1 }]
-function Clientes() {
+function Clientes () {
     return (
         <div className="w-full px-5 md:px-0 flex flex-col items-center my-10">
             <div className="flex flex-col items-center md:items-start gap-4">
@@ -42,7 +42,7 @@ function Clientes() {
                                     <div className="flex flex-col items-start gap-5">
                                         <div className="relative px-4 py-10 border-2 rounded-3xl border-black">
                                             <p className="text-sm">Lorem ipsum dolor sit amet consectetur. Quam velit cras lacus tempus nunc eget quis aliquam quis. Egestas faucibus magna leo iaculis ultrices quis est sed. Scelerisque aliquam mattis cras nascetur elit.</p>
-                                            <div className="absolute h-1.5 -bottom-1  left-5" style={{ width: '2.35rem',backgroundColor: '#f5f5f5' }}></div>
+                                            <div className="absolute h-1.5 -bottom-1  left-5" style={{ width: '2.35rem', backgroundColor: '#f5f5f5' }}></div>
                                             <div className="absolute bg-black h-7 w-0.5 -bottom-7 mb-1 rounded-s-2xl left-7 -rotate-45" style={{ borderTopRightRadius: '1rem', borderBottomLeftRadius: '1rem' }}></div>
                                             <div className="absolute bg-black h-7 w-0.5 -bottom-7 mb-1 rounded-e-xl rounded-r-xl left-12 rotate-45" style={{ borderTopLeftRadius: '1rem', borderBottomRightRadius: '1rem' }}></div>
                                         </div>

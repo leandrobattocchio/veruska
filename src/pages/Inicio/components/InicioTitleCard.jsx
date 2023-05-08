@@ -4,7 +4,7 @@ function InicioTitleCard ({ title, children, button, image, className = '', ...r
         <div {...restOfProps} className={`flex items-center py-4 gap-4 ${className}`} style={{ minHeight: '70vh' }}>
             <div className="flex flex-col gap-8 w-screen">
                 {title && title}
-                <p className="text-2xl">{children}</p>
+                <p className="text-xl">{children}</p>
                 {button && button}
             </div>
             {image && (

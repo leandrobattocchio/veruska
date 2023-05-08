@@ -81,16 +81,16 @@ function Productos () {
     return (
         <div className="py-4">
             <div className="flex flex-col gap-3 pt-10 productos">
-                <h2 className="text-5xl font-black">Productos</h2>
-                <p className="text-2xl">Lorem ipsum dolor sit amet consecte, adipisicing elit. Debitis esse odit vero totam numquam odio exercitationem in consectetur omnis, at quasi, expedita fugiat officiis minima aspernatur facilis laboriosam qui dolorum.</p>
+                <h2 className="text-3xl font-black">Productos</h2>
+                <p className="text-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo dolorum ad obcaecati repellat fugiat! Quasi obcaecati explicabo cumque voluptas, distinctio aspernatur modi deserunt laboriosam repudiandae, nulla hic consectetur in qui?</p>
             </div>
             <div className="flex flex-col gap-3 py-10 destacados">
                 <h3 className="text-3xl font-black text-center">Destacados</h3>
-                <p className="text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quis veritatis nihil explicabo quam incidunt culpa, ratione laboriosam odio corporis eaque quidem molestiae temporibus adipisci iste tempora nesciunt quod quas!</p>
+                <p className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptates autem quia culpa aperiam voluptate illum? Qui incidunt assumenda nostrum. Perspiciatis expedita ullam repellat cupiditate harum ut, totam voluptate voluptates?</p>
             </div>
             <div className="flex gap-4 productos-fotos w-full">
                 <div className="w-3/5">
-                    <img className="w-full" src="https://placehold.co/900x700" />
+                    <img className="w-full" src="https://placehold.co/900x600" />
                 </div>
                 <div className="flex flex-col w-2/5">
                     <div className="flex w-full object-cover">
@@ -98,18 +98,18 @@ function Productos () {
                     </div>
                     <div className="flex gap-4 pt-4 h-full">
                         <div>
-                            <img className="h-full object-cover" src="https://placehold.co/317x383" />
+                            <img className="h-full object-cover" src="https://placehold.co/317x283" />
                         </div>
                         <div>
-                            <img className="h-full object-cover" src="https://placehold.co/317x383" />
+                            <img className="h-full object-cover" src="https://placehold.co/317x283" />
                         </div>
                     </div>
                 </div>
             </div>
             <ProductosMoible />
             <div className="flex flex-col gap-3 py-10 nuestros-productos">
-                <h3 className="text-3xl font-black text-center">Nuestros productos</h3>
-                <p className="text-2xl">Lorem ipsum dolor sit amet consecte adipisicing elit. Quia quis veritatis nihil explicabo quam incidunt culpa, ratione laboriosam odio corporis eaque quidem molestiae temporibus adipisci iste tempora nesciunt quod quas!</p>
+                <h3 className="text-2xl font-black text-center">Nuestros productos</h3>
+                <p className="text-xl">Lorem ipsum dolor sit amet consecte adipisicing elit. Quia quis veritatis nihil explicabo quam incidunt culpa, ratione laboriosam odio corporis eaque quidem molestiae temporibus adipisci iste tempora nesciunt quod quas!</p>
             </div>
             <div>
                 <Filters />

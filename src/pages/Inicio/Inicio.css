@@ -1,77 +1,3 @@
-@media screen and (max-width: 480px) {
-
-    .titulo-1 {
-        padding: 4rem 1.5rem 1.5rem 1.5rem;
-        align-items: start;
-        height: 5rem;
-    }
-
-    .titulo-1 div h2 {
-        font-size: 2.5rem;
-    }
-
-    .titulo-1 div p {
-        font-size: 20px;
-    }
-
-    .title-image {
-        width: 100%;
-        height: 50%;
-        justify-content: center;
-        padding: 0;
-    }
-
-    .title-image img {
-        padding: 0;
-        width: 100%;
-    }
-
-
-    .titulo-2 {
-        padding: 1.5rem;
-        align-items: start;
-        min-height: 45vh !important;
-    }
-
-    .titulo-2 div {
-        align-items: center;
-
-    }
-
-    .titulo-2 div p {
-        font-size: 18px;
-        padding: 0 1rem 1rem 1rem;
-    }
-
-    .inicio-about {
-        padding: 1rem 1rem 4rem 1rem;
-    }
-
-
-    .inicio-about p {
-        width: 100%;
-        padding: 1rem;
-        font-size: 17px;
-    }
-}
-
-
-@media screen and (max-width: 769px) {
-    .title-image img {
-        padding: 0;
-        width: 100%;
-    }
-
-    .inicio-about p {
-        width: 100%;
-    }
-
-    .inicio-about {
-        padding-bottom: 6rem;
-    }
-
-}
-
 @media screen and (max-width: 1200px) {
 
     .inicio-about {
@@ -90,5 +16,72 @@
 
     .title-image img {
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .title-image img {
+        padding: 0;
+        width: 100%;
+    }
+
+    .inicio-about p {
+        width: 100%;
+    }
+
+    .inicio-about {
+        padding-bottom: 6rem;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .titulo-1 {
+        padding: 0;
+        align-items: center;
+        min-height: 60vh !important;
+    }
+
+    .titulo-1 div h2 {
+        font-size: 30px;
+    }
+
+    .titulo-1 div p {
+        font-size: 1rem;
+    }
+
+    .title-image {
+        width: 100%;
+        height: 50%;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .title-image img {
+        padding: 0;
+        width: 100%;
+    }
+
+
+    .titulo-2 {
+        align-items: start;
+        padding: 0;
+        min-height: 40vh !important;
+    }
+
+    .titulo-2 div {
+        align-items: center;
+
+    }
+
+    .titulo-2 div p {
+        font-size: 1rem;
+    }
+
+
+    .inicio-about p {
+        width: 100%;
+        font-size: 1rem;
     }
 }

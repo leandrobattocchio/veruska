@@ -24,19 +24,26 @@
 @media screen and (max-width: 480px) {
     .productos {
         align-items: center;
+        padding: 0rem 0rem 2rem 0rem;
     }
 
     .productos h2 {
-        font-size: 2.5rem;
+        font-size: 30px;
     }
 
     .productos p {
-        font-size: 1.3rem;
-        padding: 1rem;
+        text-align: center;
+        font-size: 1rem;
     }
 
     .destacados {
-        padding: 1rem 1rem 4rem 1rem;
+        padding: 0rem 0rem 2rem 0rem;
+    }
+
+    .destacados p {
+        text-align: center;
+        font-size: 1rem;
+
     }
 
     .productos-fotos {
@@ -45,22 +52,23 @@
 
     .productos-fotos-mobile {
         display: flex;
+        padding: 0;
     }
 
     .nuestros-productos {
-        padding: 1rem;
+        text-align: center;
     }
 
     .nuestros-productos h3 {
-        font-size: 1.7rem;
+        font-size: 30px;
     }
 
     .nuestros-productos p {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .productos-precio {
-        padding: 1rem;
+        padding: 0;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
     }

@@ -19,7 +19,7 @@ function Filters () {
     }
 
     return (
-        <div className="flex justify-between p-4">
+        <div className="flex justify-between pb-4">
             <div className="flex gap-6 filters">
                 {Object.entries(CATEGORIES).map(([key, value]) => {
                     return <p key={key} className="text-xl font-black py-2">{value}</p>
