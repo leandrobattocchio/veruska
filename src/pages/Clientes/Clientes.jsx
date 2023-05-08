@@ -19,7 +19,7 @@ function Clientes() {
                             <div className="flex flex-col items-start gap-5" key={client.action}>
                                 <div className="p-7 border-2 rounded-3xl border-black relative">
                                     <p className="text-xs">Lorem ipsum dolor sit amet consectetur. Quam velit cras lacus tempus nunc eget quis aliquam quis. Egestas faucibus magna leo iaculis ultrices quis est sed. Scelerisque aliquam mattis cras nascetur elit.</p>
-                                    <div className="absolute bg-white h-1.5 -bottom-1  left-5" style={{ width: '2.35rem' }}></div>
+                                    <div className="absolute h-1.5 -bottom-1  left-5" style={{ width: '2.35rem', backgroundColor: '#f5f5f5' }}></div>
                                     <div className="absolute bg-black h-7 w-0.5 -bottom-7 mb-1 rounded-s-2xl left-7 -rotate-45" style={{ borderTopRightRadius: '1rem', borderBottomLeftRadius: '1rem' }}></div>
                                     <div className="absolute bg-black h-7 w-0.5 -bottom-7 mb-1 rounded-e-xl rounded-r-xl left-12 rotate-45" style={{ borderTopLeftRadius: '1rem', borderBottomRightRadius: '1rem' }}></div>
                                 </div>
@@ -42,7 +42,7 @@ function Clientes() {
                                     <div className="flex flex-col items-start gap-5">
                                         <div className="relative px-4 py-10 border-2 rounded-3xl border-black">
                                             <p className="text-sm">Lorem ipsum dolor sit amet consectetur. Quam velit cras lacus tempus nunc eget quis aliquam quis. Egestas faucibus magna leo iaculis ultrices quis est sed. Scelerisque aliquam mattis cras nascetur elit.</p>
-                                            <div className="absolute bg-white h-1.5 -bottom-1  left-5" style={{ width: '2.35rem' }}></div>
+                                            <div className="absolute h-1.5 -bottom-1  left-5" style={{ width: '2.35rem',backgroundColor: '#f5f5f5' }}></div>
                                             <div className="absolute bg-black h-7 w-0.5 -bottom-7 mb-1 rounded-s-2xl left-7 -rotate-45" style={{ borderTopRightRadius: '1rem', borderBottomLeftRadius: '1rem' }}></div>
                                             <div className="absolute bg-black h-7 w-0.5 -bottom-7 mb-1 rounded-e-xl rounded-r-xl left-12 rotate-45" style={{ borderTopLeftRadius: '1rem', borderBottomRightRadius: '1rem' }}></div>
                                         </div>
