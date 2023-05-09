@@ -31,7 +31,7 @@ function Filters () {
                     showCategories && (
                         <div className="flex flex-col pl-2">
                             {Object.entries(CATEGORIES).map(([key, value]) => {
-                                return <p key={key} className="text-xl font-black py-2">{value}</p>
+                                return <p key={key} className="text-base font-semibold py-2">{value}</p>
                             })}
                         </div>
                     )

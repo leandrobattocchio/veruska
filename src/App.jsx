@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Navbar'
 import Layout from './components/Layout/Layout'
 import Footer from './components/Footer/Footer'
 import AsideBar from './components/AsideBar/AsideBar'
+import Loader from './components/Loader/Loader'
 import { Suspense, lazy } from 'react'
 const Productos = lazy(() => import('./pages/Productos/Productos'))
 const Clientes = lazy(() => import('./pages/Clientes/Clientes'))
@@ -13,12 +14,21 @@ import './App.css'
 import './index.css'
 
 
+const SuspenseFallback = () => {
+  return (
+    <div className='flex justify-center' style={{ minHeight: '40vh' }}>
+      <Loader />
+    </div>
+  )
+}
+
+
 function App () {
   return (
     <BrowserRouter>
       <Navbar />
       <Layout>
-        <Suspense fallback={null}>
+        <Suspense fallback={<SuspenseFallback />}>
           <Routes>
             <Route path='/' element={<Inicio />} />
             <Route path='/productos' element={<Productos />} />
