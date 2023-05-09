@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom"
-import { CollapseIcon, HeartIcon, UserIcon } from "../../../Icons"
+import { CancelIcon, CollapseIcon, HeartIcon, UserIcon } from "../../../Icons"
 import { useState } from "react"
+import './NavbarCollapse.css'
 
-const hoverAnchor = 'cursor-pointer hover:scale-110 transform transition duration-300'
+const hoverAnchor = 'cursor-pointer hover:scale-110 transform transition duration-300 text-lg'
 
 
 function NavbarCollapse () {
@@ -28,12 +29,15 @@ function NavbarCollapse () {
             </div>
             {
                 showCollapse && (
-                    <div className="flex flex-col items-start gap-0.5 font-black gap-1 text-xl pl-6">
-                        <Link className={hoverAnchor} to='/'>Inicio</Link>
-                        <Link className={hoverAnchor} to='/productos'>Productos</Link>
-                        <Link className={hoverAnchor} to='/nosotros'>Nosotros</Link>
-                        <Link className={hoverAnchor} to='/clientes'>Clientes</Link>
-                        <Link className={hoverAnchor} to='/contacto'>Contacto</Link>
+                    <div className="flex flex-col items-start gap-0.5 font-black gap-1 text-xl pl-4 absolute w-2/3 h-full navbarr-collapse" style={{ backgroundColor: '#dddddd' }}>
+                        <button className="self-start pt-4" onClick={handleCollapse}><CancelIcon /></button>
+                        <div className="flex flex-col pl-1">
+                            <Link onClick={handleCollapse} className={hoverAnchor} to='/'>Inicio</Link>
+                            <Link onClick={handleCollapse} className={hoverAnchor} to='/productos'>Productos</Link>
+                            <Link onClick={handleCollapse} className={hoverAnchor} to='/nosotros'>Nosotros</Link>
+                            <Link onClick={handleCollapse} className={hoverAnchor} to='/clientes'>Clientes</Link>
+                            <Link onClick={handleCollapse} className={hoverAnchor} to='/contacto'>Contacto</Link>
+                        </div>
                     </div>
                 )
             }

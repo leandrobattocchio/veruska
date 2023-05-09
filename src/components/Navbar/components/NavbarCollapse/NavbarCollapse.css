@@ -1,0 +1,21 @@
+.navbarr-collapse {
+    left: -300px;
+    animation: 0.2s slide-right forwards;
+    transition: ease-in;
+}
+
+
+
+.slide-right {
+    animation: slide-right 0.4s linear both
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-300px)
+    }
+
+    100% {
+        transform: translateX(300px)
+    }
+}
