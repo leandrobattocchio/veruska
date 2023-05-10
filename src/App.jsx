@@ -16,7 +16,7 @@ import './index.css'
 
 const SuspenseFallback = () => {
   return (
-    <div className='flex justify-center' style={{ minHeight: '40vh' }}>
+    <div className='flex justify-center items-center loader-container'>
       <Loader />
     </div>
   )

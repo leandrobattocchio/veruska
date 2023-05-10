@@ -5,3 +5,15 @@
   background-color: #f5f5f5;
   font-family: 'Inter', sans-serif;
 }
+
+.loader-container {
+  min-height: 80vh;
+}
+
+@media screen and (max-width: 480px) {
+
+  .loader-container {
+    min-height: 40vh !important;
+  }
+
+}

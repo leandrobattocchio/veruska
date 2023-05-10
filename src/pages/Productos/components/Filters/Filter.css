@@ -2,6 +2,10 @@
     display: none;
 }
 
+.list-button {
+    height: 2.5rem !important;
+}
+
 @media screen and (max-width: 769px) {
     .filters {
         display: none;
