@@ -10,6 +10,8 @@ const Clientes = lazy(() => import('./pages/Clientes/Clientes'))
 const Contacto = lazy(() => import('./pages/Contacto/Contacto'))
 const Inicio = lazy(() => import('./pages/Inicio/Inicio'))
 const Nosotros = lazy(() => import('./pages/Nosotros/Nosotros'))
+const Error = lazy(() => import('./pages/Error/Error'))
+
 import './App.css'
 import './index.css'
 
@@ -35,6 +37,7 @@ function App () {
             <Route path='/clientes' element={<Clientes />} />
             <Route path='/nosotros' element={<Nosotros />} />
             <Route path='/contacto' element={<Contacto />} />
+            <Route path='*' element={<Error />} />
           </Routes>
         </Suspense>
       </Layout>
