@@ -1,31 +1,39 @@
 import Accordion from "../../components/Accordion/Accordion"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import cliente1 from '../../assets/client1.png'
+import cliente2 from '../../assets/client2.png'
+import cliente3 from '../../assets/client3.png'
 
-const clientes = [{ name: "Lorem", action: "Lorem1" }, { name: "Lorem", action: "Lorem2" }, { name: "Lorem", action: "Lorem3" }]
+const clientes = [{ name: "Andrea", action: "Usuaria Entrevistada",message:"Desde que descubrí Veruska, mi armario está lleno de prendas con estilo y personalidad. ¡Siempre recibo halagos cuando las uso!",image:cliente1 }, { name: "Daniela", action: "Usuaria Entrevistada",message:"La calidad y diseño de las prendas de Veruska son excepcionales. Me encanta saber que estoy comprando piezas únicas y de producción sostenible." ,image:cliente2}, { name: "Patricia", action: "Usuaria Entrevistada",message:"Veruska se ha convertido en mi marca favorita de ropa. Cada prenda es una obra de arte con una historia detrás. ¡Me encanta llevar algo con tanto significado y estilo!",image:cliente3 }]
 const preguntas = [{ id: 1 }]
-function Clientes () {
+
+function Clientes() {
     return (
         <div className="w-full px-5 md:px-0 flex flex-col items-center my-10">
             <div className="flex flex-col items-center md:items-start gap-4">
-                <h1 className="text-3xl font-bold">Clientes</h1>
-                <p className="text-center md:text-start w-full">Lorem ipsum dolor sit amet consectetur. Imperdiet id in blandit accumsan facilisis scelerisque ornare morbi orci. At nunc volutpat viverra in mollis ut odio nulla. Cursus amet et dui.</p>
+                <h1 className="text-3xl font-bold text-primary-darkerblue">Clientes</h1>
+                <p className="text-center md:text-start w-full text-lg">En Veruska, nuestros clientes son <b className=" font-bold text-primary-darkblue">nuestra mayor inspiración.</b> Nos encanta crear prendas llenas de significado y color para que cada mujer se sienta única y especial. Por ello, le damos <b className=" font-bold text-primary-darkblue">mucho valor</b> a lo que tienen para decir.
+                </p>
             </div>
-            <p className="text-xl md:text-3xl font-bold my-10">Que dicen nuestros clientes</p>
+            <p className="text-xl md:text-3xl font-bold my-10 text-primary-darkerblue">Dicen de nosotros</p>
+            <p className="text-lg md:text-xl w-1/2 text-center mb-10">¡Más de 2000 personas confían en Veruska! Su satisfacción, respaldada por prendas con una calidad únicas y excepcional, <p className=" font-bold text-primary-darkblue">es nuestro mayor logro.</p>
+            </p>
             <div className="mb-40 w-full">
                 <div className="flex">
                     <div className="hidden md:flex gap-5">
                         {clientes.map((client) =>
-                            <div className="flex flex-col items-start gap-5" key={client.action}>
-                                <div className="p-7 border-2 rounded-3xl border-black relative">
-                                    <p className="text-xs">Lorem ipsum dolor sit amet consectetur. Quam velit cras lacus tempus nunc eget quis aliquam quis. Egestas faucibus magna leo iaculis ultrices quis est sed. Scelerisque aliquam mattis cras nascetur elit.</p>
+                            <div className="flex flex-col w-1/3 items-start gap-5" key={client.action}>
+                                <div className="p-7 border-2 flex items-center h-32 rounded-3xl border-black relative">
+                                    <p className="text-xs">&quot;{client.message}&quot;
+                                    </p>
                                     <div className="absolute h-1.5 -bottom-1  left-5" style={{ width: '2.35rem', backgroundColor: '#f5f5f5' }}></div>
                                     <div className="absolute bg-black h-7 w-0.5 -bottom-7 mb-1 rounded-s-2xl left-7 -rotate-45" style={{ borderTopRightRadius: '1rem', borderBottomLeftRadius: '1rem' }}></div>
                                     <div className="absolute bg-black h-7 w-0.5 -bottom-7 mb-1 rounded-e-xl rounded-r-xl left-12 rotate-45" style={{ borderTopLeftRadius: '1rem', borderBottomRightRadius: '1rem' }}></div>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <div className="h-20 w-20 rounded-full overflow-hidden flex justify-center items-center">
-                                        <img src="https://placehold.co/80" alt="" />
+                                        <img src={client.image} alt="" />
                                     </div>
                                     <div className="flex flex-col items-start">
                                         <p className="text-2xl font-bold">{client.name}</p>

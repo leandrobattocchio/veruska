@@ -7,8 +7,8 @@ const Contacto = () => {
     return (
         <div className='flex flex-col items-center my-5 px-5 md:px-0'>
             <div className='flex flex-col items-center md:items-start gap-3 mb-5 w-full'>
-                <h1 className='text-center font-bold text-3xl'>Contacto</h1>
-                <p className='text-sm'>Lorem ipsum dolor sit amet consectetur. Imperdiet id in blandit accumsan facilisis scelerisque ornare morbi orci. At nunc volutpat viverra in mollis ut.</p>
+                <h1 className='text-center font-bold text-3xl text-primary-darkerblue'>Contacto</h1>
+                <p className='text-lg'>En Veruska, valoramos la opinión de nuestros clientes. Si tienes <b className='text-primary-darkblue'>alguna pregunta, comentario o preocupación.</b> Contáctanos y te responderemos lo antes posible.</p>
             </div>
             <div className='w-full flex flex-col md:flex-row gap-2 md:gap-1'>
                 <form action="" className='flex flex-col gap-5 items-start px-5 py-6 bg-neutral-200 md:w-3/5'>
@@ -40,9 +40,9 @@ const Contacto = () => {
             </div>
             <div className='flex flex-col items-center md:flex-row md:my-5'>
                 <div className='flex flex-col items-center gap-3 md:gap-5 my-5 md:w-1/2'>
-                    <h3 className='font-bold text-center text-2xl md:text-3xl'>Nuestra Sucursal</h3>
+                    <h3 className='font-bold text-center text-2xl md:text-3xl text-primary-darkerblue'>Nuestra Sucursal</h3>
                     <p className='md:w-2/3'>Lorem ipsum dolor sit amet consectetur. Imperdiet id in blandit accumsan facilisis scelerisque ornare morbi orci. At nunc volutpat viverra in mollis ut.</p>
-                    <p className='flex gap-2 items-center md:text-lg'><SlLocationPin /> San Rafael, Mendoza | Argentina</p>
+                    <p className='flex gap-2 items-center md:text-lg text-primary-darkblue'><SlLocationPin /> San Rafael, Mendoza | Argentina</p>
                 </div>
                 <div>
                     <img src="https://placehold.co/620" alt="Imagen" />
