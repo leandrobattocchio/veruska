@@ -2,6 +2,7 @@ import { SlLocationPin } from 'react-icons/sl'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { BsFacebook, BsWhatsapp } from 'react-icons/bs'
 import logo from '../../assets/logo.png'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -10,17 +11,15 @@ const Footer = () => {
                 <div className='flex flex-col items-center md:items-start justify-end gap-5'>
                     <img src={logo} className='w-11/12' alt="Logo" />
                     <div className='hidden md:flex gap-4 items-center'>
-                        <AiOutlineInstagram size={36} className=' text-primary-darkerblue' />
-                        <BsFacebook size={30} className=' text-primary-darkerblue'/>
-                        <BsWhatsapp size={30} className=' text-primary-darkerblue'/>
+                        <Link to={'https://www.facebook.com/people/Veruska-arte-y-moda/100063818371438/'} target='_blank'><AiOutlineInstagram size={36} className=' text-primary-darkerblue' /></Link>
+                        <Link to={'https://www.instagram.com/veruskadiseno/?hl=es-la'} target='_blank'><BsFacebook size={30} className=' text-primary-darkerblue' /></Link>
+                        <Link to={'https://api.whatsapp.com/send?phone=54123456789'} target='_blank'><BsWhatsapp size={30} className=' text-primary-darkerblue' /></Link>
                     </div>
                 </div>
                 <div className='flex gap-5 text-base'>
                     <div className='flex flex-col text-primary-black font-extralight'>
                         <p className='font-semibold '>Inicio</p>
-                        <p>Lorem</p>
-                        <p>Lorem</p>
-                        <p>Lorem</p>
+
                     </div>
                     <div className='flex flex-col text-primary-black font-extralight'>
                         <p className='font-semibold '>Productos</p>
@@ -47,9 +46,9 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='flex md:hidden gap-4 items-center'>
-                    <AiOutlineInstagram size={38} className=' text-primary-darkerblue'/>
-                    <BsFacebook size={32} className=' text-primary-darkerblue'/>
-                    <BsWhatsapp size={32} className=' text-primary-darkerblue'/>
+                    <Link to={'https://www.facebook.com/people/Veruska-arte-y-moda/100063818371438/'} target='_blank'><AiOutlineInstagram size={36} className=' text-primary-darkerblue' /></Link>
+                    <Link to={'https://www.instagram.com/veruskadiseno/?hl=es-la'} target='_blank'><BsFacebook size={32} className=' text-primary-darkerblue' /></Link>
+                    <Link to={'https://api.whatsapp.com/send?phone=54123456789'} target='_blank'><BsWhatsapp size={32} className=' text-primary-darkerblue' /></Link>
                 </div>
             </div>
             <div className='hidden md:inline-block w-full h-px bg-primary-darkerblue'></div>
