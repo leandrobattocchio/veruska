@@ -13,7 +13,6 @@ export default {
         'primary-black':'#303335',
         'primary-darkblue':'#0F4C83',
         'primary-darkerblue':'#213558',
-
       }
     },
   },
