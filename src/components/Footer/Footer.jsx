@@ -17,28 +17,27 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='flex gap-5 text-base'>
-                    <div className='flex flex-col text-primary-black font-extralight'>
+                    <div className='flex flex-col text-xs md:text-base text-primary-black font-extralight'>
                         <p className='font-semibold '>Inicio</p>
-
                     </div>
-                    <div className='flex flex-col text-primary-black font-extralight'>
+                    <div className='flex flex-col text-xs md:text-base text-primary-black font-extralight'>
                         <p className='font-semibold '>Productos</p>
                         <p>Destacados</p>
                         <p>Nuestros</p>
                     </div>
-                    <div className='flex flex-col text-primary-black font-extralight'>
+                    <div className='flex flex-col text-xs md:text-base text-primary-black font-extralight'>
                         <p className='font-semibold '>Nosotros</p>
                         <p>Mision/Vision</p>
                         <p>Que hacemos</p>
                         <p>Quienes somos</p>
                     </div>
-                    <div className='flex flex-col text-primary-black font-extralight'>
+                    <div className='flex flex-col text-xs md:text-base text-primary-black font-extralight'>
                         <p className='font-semibold '>Clientes</p>
                         <p>Dicen de nosotros</p>
                         <p>Colaboraciones</p>
                         <p>Preguntas frecuentes</p>
                     </div>
-                    <div className='flex flex-col text-primary-black font-extralight '>
+                    <div className='flex flex-col text-xs md:text-base text-primary-black font-extralight '>
                         <p className='font-semibold '>Contacto</p>
                         <p>Formulario</p>
                         <p>Medios</p>
