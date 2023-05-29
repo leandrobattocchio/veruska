@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const Contacto = () => {
     return (
-        <div className='flex flex-col items-center my-5 px-5 gap-5 md:px-0'>
+        <div className='flex flex-col items-center px-5 gap-5 md:px-0'>
             <div className='flex flex-col items-center md:items-start gap-3 mb-5 w-full'>
                 <h1 className='text-center font-bold text-3xl text-primary-darkerblue'>Contacto</h1>
                 <p className='text-lg'>En Veruska, valoramos la opinión de nuestros clientes. Si tienes <b className='text-primary-darkblue'>alguna pregunta, comentario o preocupación.</b> Contáctanos y te responderemos lo antes posible.</p>

@@ -4,9 +4,9 @@ import Alados from "../../components/Colaborations/Alados"
 import Mancino from "../../components/Colaborations/Mancino"
 
 
-function Clientes() {
+function Clientes () {
     return (
-        <div className="w-full px-5 md:px-0 flex flex-col items-center my-10">
+        <div className="w-full px-5 md:px-0 flex flex-col items-center ">
             <div className="flex flex-col items-center md:items-start gap-4">
                 <h1 className="text-3xl font-bold text-primary-darkerblue">Clientes</h1>
                 <p className="text-center md:text-start w-full text-lg">En Veruska, nuestros clientes son <b className=" font-bold text-primary-darkblue">nuestra mayor inspiración.</b> Nos encanta crear prendas llenas de significado y color para que cada mujer se sienta única y especial. Por ello, le damos <b className=" font-bold text-primary-darkblue">mucho valor</b> a lo que tienen para decir.

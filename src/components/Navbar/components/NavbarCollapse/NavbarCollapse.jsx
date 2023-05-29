@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { CancelIcon, CollapseIcon, HeartIcon, UserIcon } from "../../../Icons"
 import { useState } from "react"
+import logo from '../../../../assets/logo.png'
 import './NavbarCollapse.css'
 
 const hoverAnchor = 'cursor-pointer hover:scale-110 transform transition duration-300 text-lg'
@@ -14,13 +15,13 @@ function NavbarCollapse () {
     }
 
     return (
-        <div className="flex flex-col navbar-collapse" style={{ backgroundColor: '#e5e5e5' }}>
+        <div className="flex flex-col navbar-collapse  w-full" style={{ boxShadow: '0px 0px 2px 2px #919da6', color: '#233556', backgroundColor: '#fff' }}>
             <div className="flex justify-between p-4">
                 <div className="flex gap-4">
                     <div className="flex items-center cursor-pointer" onClick={handleCollapse}>
                         <CollapseIcon />
                     </div>
-                    <p className="font-black flex items-center">LOGO</p>
+                    <img src={logo} className="w-34 h-10" />
                 </div>
                 <div className="flex gap-4">
                     <HeartIcon />
@@ -29,7 +30,7 @@ function NavbarCollapse () {
             </div>
             {
                 showCollapse && (
-                    <div className="flex flex-col items-start gap-0.5 font-black gap-1 text-xl pl-4 absolute w-2/3 h-full navbarr-collapse" style={{ backgroundColor: '#dddddd' }}>
+                    <div className="flex flex-col items-start gap-0.5 font-black gap-1 text-xl pl-4 absolute w-2/3 h-full navbar-collapse" style={{ backgroundColor: '#dddddd' }}>
                         <button className="self-start pt-4" onClick={handleCollapse}><CancelIcon /></button>
                         <div className="flex flex-col pl-1">
                             <Link onClick={handleCollapse} className={hoverAnchor} to='/'>Inicio</Link>
