@@ -4,92 +4,11 @@ import picture1 from './assets/picture1.png'
 import picture2 from './assets/picture2.png'
 import picture3 from './assets/picture3.png'
 import picture4 from './assets/picture4.png'
-import product1 from './assets/product1.png'
-import product2 from './assets/product2.png'
-import product3 from './assets/product3.png'
-import product4 from './assets/product4.png'
-import product5 from './assets/product5.png'
-import product6 from './assets/product6.png'
-import product7 from './assets/product7.png'
-import product8 from './assets/product8.png'
-
+import { useEffect, useState } from "react"
+import { PRODUCTOS } from "./consts/consts"
 import './Productos.css'
-import { useState } from "react"
+import { Link } from "react-router-dom"
 
-const PRODUCTOS = [
-    {
-        id: 1,
-        title: 'Nombre producto',
-        price: 20,
-        img: product1
-    },
-    {
-        id: 2,
-        title: 'Nombre producto',
-        price: 20,
-        img: product2
-    },
-    {
-        id: 3,
-        title: 'Nombre producto',
-        price: 20,
-        img: product3
-    },
-    {
-        id: 4,
-        title: 'Nombre producto',
-        price: 20,
-        img: product4
-    },
-    {
-        id: 5,
-        title: 'Nombre producto',
-        price: 20,
-        img: product5
-    },
-    {
-        id: 6,
-        title: 'Nombre producto',
-        price: 20,
-        img: product6
-    },
-    {
-        id: 7,
-        title: 'Nombre producto',
-        price: 20,
-        img: product7
-    },
-    {
-        id: 8,
-        title: 'Nombre producto',
-        price: 20,
-        img: product8
-    },
-    {
-        id: 9,
-        title: 'Nombre producto',
-        price: 20,
-        img: 'https://placehold.co/250x300'
-    },
-    {
-        id: 10,
-        title: 'Nombre producto',
-        price: 20,
-        img: 'https://placehold.co/250x300'
-    },
-    {
-        id: 11,
-        title: 'Nombre producto',
-        price: 20,
-        img: 'https://placehold.co/250x300'
-    },
-    {
-        id: 12,
-        title: 'Nombre producto',
-        price: 20,
-        img: 'https://placehold.co/250x300'
-    }
-]
 
 const MAX_PRODUCTS = 8
 
@@ -102,6 +21,9 @@ function Productos () {
     const showAllProducts = () => setIsAllProducts(prevState => !prevState)
 
     const productsToRender = isAllProducts ? PRODUCTOS : PRODUCTOS.slice(0, MAX_PRODUCTS)
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     return (
         <div>
@@ -148,15 +70,17 @@ function Productos () {
                     {productsToRender.map((producto) => {
                         return (
                             <div key={producto.id} className="p-1 flex flex-col justify-center content-center">
-                                <img src={producto.img} alt={`${producto.title} image`} />
-                                <p className="text-center text-xl">{producto.title}</p>
+                                <Link to={`/productos/${producto.id}`} className="flex justify-center">
+                                    <img src={producto.img} alt={`${producto.title} image`} />
+                                </Link>
+                                <p className="text-center text-xl">{producto.name}</p>
                                 <p className="text-center font-black">{`$ ${producto.price}`}</p>
                             </div>
                         )
                     })}
                 </div>
                 <div className="flex justify-center py-4">
-                    <button onClick={showAllProducts} className="flex gap-2 p-2 text-md  rounded-md" style={{ backgroundColor: '#1d4e7f', color: '#fff' }}>Ver mas productos <DownIcon /></button>
+                    <button onClick={showAllProducts} className="flex gap-2 p-2 text-md rounded-md" style={{ backgroundColor: '#1d4e7f', color: '#fff' }}>Ver mas productos <DownIcon /></button>
                 </div>
             </div>
         </div>

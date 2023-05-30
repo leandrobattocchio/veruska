@@ -14,6 +14,7 @@ const Error = lazy(() => import('./pages/Error/Error'))
 
 import './App.css'
 import './index.css'
+import ProductInfo from './pages/Productos/components/ProductInfo/ProductInfo'
 
 
 const SuspenseFallback = () => {
@@ -26,6 +27,7 @@ const SuspenseFallback = () => {
 
 
 function App () {
+
   return (
     <BrowserRouter>
       <Navbar />
@@ -34,6 +36,7 @@ function App () {
           <Routes>
             <Route path='/' element={<Inicio />} />
             <Route path='/productos' element={<Productos />} />
+            <Route path='/productos/:id' element={<ProductInfo />} />
             <Route path='/clientes' element={<Clientes />} />
             <Route path='/nosotros' element={<Nosotros />} />
             <Route path='/contacto' element={<Contacto />} />

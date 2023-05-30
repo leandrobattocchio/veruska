@@ -4,7 +4,7 @@ import cliente1 from '../../assets/client1.png'
 import cliente2 from '../../assets/client2.png'
 import cliente3 from '../../assets/client3.png'
 
-const clientes = [{ name: "Andrea", action: "Usuaria Entrevistada", message: "Desde que descubrí Veruska, mi armario está lleno de prendas con estilo y personalidad. ¡Siempre recibo halagos cuando las uso!", image: cliente1 }, { name: "Daniela", action: "Usuaria Entrevistada", message: "La calidad y diseño de las prendas de Veruska son excepcionales. Me encanta saber que estoy comprando piezas únicas y de producción sostenible.", image: cliente2 }, { name: "Patricia", action: "Usuaria Entrevistada", message: "Veruska se ha convertido en mi marca favorita de ropa. Cada prenda es una obra de arte con una historia detrás. ¡Me encanta llevar algo con tanto significado y estilo!", image: cliente3 }]
+const clientes = [{ name: "Andrea", action: "Usuaria Entrevistada", message: "Desde que descubrí Veruska, mi armario está lleno de prendas con estilo y personalidad. ¡Siempre recibo halagos cuando las uso!", image: cliente1 }, { name: "Daniela", action: "Usuaria Entrevistada2", message: "La calidad y diseño de las prendas de Veruska son excepcionales. Me encanta saber que estoy comprando piezas únicas y de producción sostenible.", image: cliente2 }, { name: "Patricia", action: "Usuaria Entrevistada3", message: "Veruska se ha convertido en mi marca favorita de ropa. Cada prenda es una obra de arte con una historia detrás. ¡Me encanta llevar algo con tanto significado y estilo!", image: cliente3 }]
 const ClientSlider = () => {
     return (
         <div className="md:mb-40 mb-20 w-full">

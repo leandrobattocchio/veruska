@@ -10,12 +10,12 @@ const hoverAnchor = 'cursor-pointer transform transition duration-300 flex gap-1
 function Navbar () {
 
     const { pathname } = useLocation()
-    console.log(pathname)
+    const backgroundColor = pathname === '/' ? 'rgb(198,220,234)' : ''
 
 
     return (
         <>
-            <div className="bg-white flex justify-between px-20 items-center h-16 navbar p-2 fixed w-full" style={{ boxShadow: '0px 0px 2px 2px #919da6', color: '#233556' }}>
+            <div className="bg-white flex justify-between px-20 items-center h-16 navbar p-2 fixed w-full z-50" style={{ boxShadow: '0px 0px 2px 2px #919da6', color: '#233556', backgroundColor }}>
                 <div className="flex justify-center items-center flex-row gap-2 text-lg">
                     <img src={logo} />
                 </div>

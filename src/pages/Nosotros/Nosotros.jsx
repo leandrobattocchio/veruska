@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import picture1 from './assets/picture1.png'
 import picture2 from './assets/picture2.png'
 import picture3 from './assets/picture3.png'
@@ -14,6 +15,11 @@ const importantText = 'text-primary-darkblue'
 
 
 function Nosotros () {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return (
         <div >
             <div className="flex flex-col gap-3 nosotros">

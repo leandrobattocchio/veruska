@@ -1,0 +1,9 @@
+@media screen and (max-width: 1040px) {
+    .mobile-product {
+        display: block !important;
+    }
+
+    .product-info {
+        display: none !important;
+    }
+}

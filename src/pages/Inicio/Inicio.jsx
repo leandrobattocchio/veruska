@@ -10,10 +10,16 @@ import ClientSlider from '../../components/ClientsSlider/ClientSlider'
 import { SlLocationPin } from 'react-icons/sl'
 import { SearchIcon, HeartIcon, WhatsAppIcon, CrownIcon } from '../../components/Icons/Icon'
 import './Inicio.css'
+import { useEffect } from 'react'
 
 const importantText = 'text-primary-darkblue'
 
 function Inicio () {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return (
         <div className="background-home">
             <div className={`flex items-center py-10 gap-4 items-center titulo-1`} style={{ minHeight: '70vh' }}>
