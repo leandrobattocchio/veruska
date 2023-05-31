@@ -4,7 +4,7 @@ import './AsideBar.css'
 function AsideBar () {
     return (
         <div
-            className='aside-bar fixed right-3 top-2/4 cursor-pointer hover:scale-110 transform transition duration-300 p-2 rounded-full'
+            className='aside-bar fixed md:right-3 md:top-2/4 cursor-pointer hover:scale-110 transform transition duration-300 p-2 rounded-full'
             style={{ backgroundColor: '#2bbb2f' }}
         >
             <WhatsAppIcon />

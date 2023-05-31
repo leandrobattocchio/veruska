@@ -9,8 +9,9 @@ import picture9 from '../Nosotros/assets/picture9.png'
 import ClientSlider from '../../components/ClientsSlider/ClientSlider'
 import { SlLocationPin } from 'react-icons/sl'
 import { SearchIcon, HeartIcon, WhatsAppIcon, CrownIcon } from '../../components/Icons/Icon'
-import './Inicio.css'
 import { useEffect } from 'react'
+import './Inicio.css'
+import '../Nosotros/Nosotros.css'
 
 const importantText = 'text-primary-darkblue'
 
@@ -23,12 +24,12 @@ function Inicio () {
     return (
         <div className="background-home">
             <div className={`flex items-center py-10 gap-4 items-center titulo-1`} style={{ minHeight: '70vh' }}>
-                <div className="flex flex-col gap-8 w-screen">
-                    <div className=''>
+                <div className="flex flex-col gap-8 w-screen welcome-home">
+                    <div className='home-title'>
                         <p style={{ color: '#4e607c' }} className='text-xl font-black'>Bienvenida a</p>
                         <h1 className="text-5xl font-black text-primary-darkerblue">Veruska: Arte, Amor & Color</h1>
                     </div>
-                    <p className="text-lg">
+                    <p className="text-lg home-text">
                         Explora el universo de Veruska, donde el arte, el amor y el color se fusionan en prendas únicas cargadas de significado. Descubre una marca que <b className={importantText}>celebra la vida, respeta el medio ambiente y empodera a las mujeres</b>.
                         ¿Lista para unirte a nuestra comunidad?
                     </p>
@@ -38,7 +39,7 @@ function Inicio () {
                     <img src={picture1} className="w-3/4 h-full object-cover " />
                 </div>
             </div>
-            <div className='w-full h-20 mt-24 flex' style={{ backgroundColor: 'rgb(33 53 88)' }}>
+            <div className='w-full h-20 mt-24 flex info-home-text' style={{ backgroundColor: 'rgb(33 53 88)' }}>
                 <div className='w-1/4 flex text-white justify-center items-center gap-4'>
                     <SearchIcon style={{ width: '40px', height: '40px' }} />
                     <div className='flex flex-col'>
@@ -84,7 +85,7 @@ function Inicio () {
                         <img src={picture6} className="rounded-2xl" />
                     </div>
                 </div>
-                <div style={{ backgroundColor: '#c0d8e7' }} className=' w-full flex justify-between p-10'>
+                <div style={{ backgroundColor: '#c0d8e7' }} className=' w-full flex justify-between p-10 estar-al-tanto'>
                     <div className='w-3/5 flex flex-col justify-center items-center gap-10'>
                         <p className='text-5xl font-black text-primary-darkerblue text-center'>¿Queres estar al tanto de nuestra moda?</p>
                         <p className='text-lg px-10'>Recibí en tu correo electrónico las <b className={importantText}>mejores novedades, promociones exclusivas y contenido inspirador</b> al suscribirte a nuestro boletín. Se parte de nuestra comunidad y mantente actualizada con lo mejor de nuestra moda ilustrada y respetuosa con el medio ambiente.</p>
