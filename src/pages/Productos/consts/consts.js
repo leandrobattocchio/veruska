@@ -7,17 +7,27 @@ import product6 from '../assets/product6.png'
 import product7 from '../assets/product7.png'
 import product8 from '../assets/product8.png'
 
+
+export const CATEGORIES = {
+    delantal: 'Delantales',
+    vestido: 'Vestidos',
+    blusa: 'Blusas',
+    pantalon: 'Pantalones'
+}
+
 export const PRODUCTOS = [
     {
         id: 1,
         name: 'Nombre producto',
         price: 20,
+        category: CATEGORIES.delantal,
         info: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis doloribus eum facere ipsum maxime magni doloremque placeat voluptatem soluta? Modi aliquid ab at placeat molestias doloribus maxime! Animi, ad? Architecto.',
         img: product1
     },
     {
         id: 2,
         name: 'Nombre producto',
+        category: CATEGORIES.delantal,
         price: 20,
         info: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis doloribus eum facere ipsum maxime magni doloremque placeat voluptatem soluta? Modi aliquid ab at placeat molestias doloribus maxime! Animi, ad? Architecto.',
 
@@ -26,6 +36,7 @@ export const PRODUCTOS = [
     {
         id: 3,
         name: 'Nombre producto',
+        category: CATEGORIES.delantal,
         price: 20,
         info: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis doloribus eum facere ipsum maxime magni doloremque placeat voluptatem soluta? Modi aliquid ab at placeat molestias doloribus maxime! Animi, ad? Architecto.',
 
@@ -34,6 +45,7 @@ export const PRODUCTOS = [
     {
         id: 4,
         name: 'Nombre producto',
+        category: CATEGORIES.delantal,
         price: 20,
         info: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis doloribus eum facere ipsum maxime magni doloremque placeat voluptatem soluta? Modi aliquid ab at placeat molestias doloribus maxime! Animi, ad? Architecto.',
         img: product4
@@ -41,25 +53,25 @@ export const PRODUCTOS = [
     {
         id: 5,
         name: 'Nombre producto',
+        category: CATEGORIES.vestido,
         price: 20,
         info: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis doloribus eum facere ipsum maxime magni doloremque placeat voluptatem soluta? Modi aliquid ab at placeat molestias doloribus maxime! Animi, ad? Architecto.',
-
         img: product5
     },
     {
         id: 6,
         name: 'Nombre producto',
+        category: CATEGORIES.vestido,
         price: 20,
         info: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis doloribus eum facere ipsum maxime magni doloremque placeat voluptatem soluta? Modi aliquid ab at placeat molestias doloribus maxime! Animi, ad? Architecto.',
-
         img: product6
     },
     {
         id: 7,
         name: 'Nombre producto',
+        category: CATEGORIES.vestido,
         price: 20,
         info: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis doloribus eum facere ipsum maxime magni doloremque placeat voluptatem soluta? Modi aliquid ab at placeat molestias doloribus maxime! Animi, ad? Architecto.',
-
         img: product7
     },
     {
@@ -67,7 +79,7 @@ export const PRODUCTOS = [
         name: 'Nombre producto',
         price: 20,
         info: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis doloribus eum facere ipsum maxime magni doloremque placeat voluptatem soluta? Modi aliquid ab at placeat molestias doloribus maxime! Animi, ad? Architecto.',
-
+        category: CATEGORIES.vestido,
         img: product8
     },
     {
@@ -75,7 +87,7 @@ export const PRODUCTOS = [
         name: 'Nombre producto',
         price: 20,
         info: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis doloribus eum facere ipsum maxime magni doloremque placeat voluptatem soluta? Modi aliquid ab at placeat molestias doloribus maxime! Animi, ad? Architecto.',
-
+        category: CATEGORIES.pantalon,
         img: 'https://placehold.co/250x300'
     },
     {
@@ -83,7 +95,7 @@ export const PRODUCTOS = [
         name: 'Nombre producto',
         price: 20,
         info: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis doloribus eum facere ipsum maxime magni doloremque placeat voluptatem soluta? Modi aliquid ab at placeat molestias doloribus maxime! Animi, ad? Architecto.',
-
+        category: CATEGORIES.pantalon,
         img: 'https://placehold.co/250x300'
     },
     {
@@ -91,7 +103,7 @@ export const PRODUCTOS = [
         name: 'Nombre producto',
         price: 20,
         info: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis doloribus eum facere ipsum maxime magni doloremque placeat voluptatem soluta? Modi aliquid ab at placeat molestias doloribus maxime! Animi, ad? Architecto.',
-
+        category: CATEGORIES.pantalon,
         img: 'https://placehold.co/250x300'
     },
     {
@@ -99,7 +111,7 @@ export const PRODUCTOS = [
         name: 'Nombre producto',
         price: 20,
         info: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis doloribus eum facere ipsum maxime magni doloremque placeat voluptatem soluta? Modi aliquid ab at placeat molestias doloribus maxime! Animi, ad? Architecto.',
-
+        category: CATEGORIES.pantalon,
         img: 'https://placehold.co/250x300'
     }
 ]

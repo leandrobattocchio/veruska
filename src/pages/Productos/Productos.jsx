@@ -17,10 +17,15 @@ const importantText = 'text-primary-darkblue'
 function Productos () {
 
     const [isAllProducts, setIsAllProducts] = useState(false)
+    const [filter, setFilter] = useState({ category: 'Todos' })
 
+    const changeCategory = (newFilter) => setFilter(prevState => ({ ...prevState, category: newFilter }))
     const showAllProducts = () => setIsAllProducts(prevState => !prevState)
 
-    const productsToRender = isAllProducts ? PRODUCTOS : PRODUCTOS.slice(0, MAX_PRODUCTS)
+
+    const productsFilters = filter.category === 'Todos' ? PRODUCTOS : PRODUCTOS.filter((producto) => producto.category === filter.category)
+    const productsToRender = isAllProducts ? productsFilters : productsFilters.slice(0, MAX_PRODUCTS)
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
@@ -65,19 +70,27 @@ function Productos () {
                 </p>
             </div>
             <div>
-                <Filters />
+                <Filters category={filter.category} changeCategory={changeCategory} />
                 <div className="py-4 productos-precio">
-                    {productsToRender.map((producto) => {
-                        return (
-                            <div key={producto.id} className="p-1 flex flex-col justify-center content-center">
-                                <Link to={`/productos/${producto.id}`} className="flex justify-center">
-                                    <img src={producto.img} alt={`${producto.title} image`} />
-                                </Link>
-                                <p className="text-center text-xl">{producto.name}</p>
-                                <p className="text-center font-black">{`$ ${producto.price}`}</p>
-                            </div>
-                        )
-                    })}
+                    {
+                        productsToRender.length > 0
+                            ? productsToRender.map((producto) => {
+                                return (
+                                    <div key={producto.id} className="p-1 flex flex-col justify-center content-center">
+                                        <Link to={`/productos/${producto.id}`} className="flex justify-center">
+                                            <img src={producto.img} alt={`${producto.title} image`} />
+                                        </Link>
+                                        <p className="text-center text-xl">{producto.name}</p>
+                                        <p className="text-center font-black">{`$ ${producto.price}`}</p>
+                                    </div>
+                                )
+                            })
+                            : (
+                                <div style={{ minHeight: '35vh' }}>
+                                    <p>No hay productos para mostrar!</p>
+                                </div>
+                            )
+                    }
                 </div>
                 <div className="flex justify-center py-4">
                     <button onClick={showAllProducts} className="flex gap-2 p-2 text-md rounded-md" style={{ backgroundColor: '#1d4e7f', color: '#fff' }}>Ver mas productos <DownIcon /></button>

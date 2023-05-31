@@ -17,6 +17,6 @@
 }
 
 .gradiente {
-    background: rgb(198, 220, 234);
-    background: linear-gradient(180deg, rgba(198, 220, 234, 1) 3%, rgba(250, 250, 250, 1) 34%);
+    background: rgb(250, 250, 250);
+    background: linear-gradient(180deg, rgba(250, 250, 250, 1) 4%, rgba(198, 220, 234, 1) 11%, rgba(198, 220, 234, 1) 18%, rgba(255, 255, 255, 1) 24%);
 }
