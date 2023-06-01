@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom"
-import { HeartIcon, HouseIcon, MessageIcon, PeopleIcon, PhoneIcon, ShoppingBagIcon } from "../Icons"
+import {HouseIcon, MessageIcon, PeopleIcon, PhoneIcon, ShoppingBagIcon } from "../Icons"
 import { NavbarCollapse } from "./components/"
 import logo from '../../assets/logo.png'
 import './Navbar.css'
@@ -40,9 +40,7 @@ function Navbar () {
                         Contacto
                     </Link>
                 </div>
-                <div className="flex justify-center items-center gap-2">
-                    <HeartIcon className={hoverAnchor} />
-                    <p className="font-black text-lg">Favoritos</p>
+                <div className="flex justify-center items-center gap-2 w-1/12">
                 </div>
             </div>
             <NavbarCollapse />

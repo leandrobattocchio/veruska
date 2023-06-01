@@ -41,7 +41,6 @@ function MobileProductInfo () {
                     <p className="text-3xl font-black">{product.name}</p>
                     <p className="text-lg">{product.info}</p>
                     <p className="font-black text-2xl">Precio: {product.price}$</p>
-                    <button className="flex gap-2 p-2 text-base rounded-xl list-button w-40" style={{ backgroundColor: '#1d4e7f', color: '#fff' }}>Añadir a favoritos</button>
                 </div>
             </div>
         </div>
@@ -87,7 +86,6 @@ function ProductInfo () {
                         <p className="text-3xl font-black">{product.name}</p>
                         <p className="text-lg">{product.info}</p>
                         <p className="font-black text-2xl">Precio: {product.price}$</p>
-                        <button className="flex gap-2 p-2 text-base rounded-xl list-button w-40" style={{ backgroundColor: '#1d4e7f', color: '#fff' }}>Añadir a favoritos</button>
                     </div>
                 </div>
             </div>

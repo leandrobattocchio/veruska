@@ -12,10 +12,11 @@ import { SearchIcon, HeartIcon, WhatsAppIcon, CrownIcon } from '../../components
 import { useEffect } from 'react'
 import './Inicio.css'
 import '../Nosotros/Nosotros.css'
+import { Link } from 'react-router-dom'
 
 const importantText = 'text-primary-darkblue'
 
-function Inicio () {
+function Inicio() {
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -33,7 +34,9 @@ function Inicio () {
                         Explora el universo de Veruska, donde el arte, el amor y el color se fusionan en prendas únicas cargadas de significado. Descubre una marca que <b className={importantText}>celebra la vida, respeta el medio ambiente y empodera a las mujeres</b>.
                         ¿Lista para unirte a nuestra comunidad?
                     </p>
-                    <button style={{ backgroundColor: 'rgb(33 53 88)' }} className="w-40 h-12 rounded-xl text-lg text-white">Descubrir mas</button>
+                    <Link to={'/productos'}>
+                        <button style={{ backgroundColor: 'rgb(33 53 88)' }} className="w-40 h-12 rounded-xl text-lg text-white">Descubrir mas</button>
+                    </Link>
                 </div>
                 <div className="w-full h-full flex justify-end title-image">
                     <img src={picture1} className="w-3/4 h-full object-cover " />
@@ -44,28 +47,25 @@ function Inicio () {
                     <SearchIcon style={{ width: '40px', height: '40px' }} />
                     <div className='flex flex-col'>
                         <p>Descubri nuestros productos</p>
-                        <p>Lorem</p>
                     </div>
                 </div>
                 <div className='w-1/4 flex text-white justify-center items-center gap-4'>
                     <HeartIcon style={{ width: '40px', height: '40px' }} />
                     <div className='flex flex-col'>
                         <p>Agrega como favorito</p>
-                        <p>Lorem</p>
                     </div>
                 </div>
                 <div className='w-1/4 flex text-white justify-center items-center gap-4'>
                     <WhatsAppIcon />
                     <div className='flex flex-col'>
                         <p>Contactanos por Whatsapp</p>
-                        <p>Lorem</p>
+                        <p>+54 9 2604 54-7200</p>
                     </div>
                 </div>
                 <div className='w-1/4 flex text-white justify-center items-center gap-4'>
                     <CrownIcon style={{ width: '40px', height: '40px' }} />
                     <div className='flex flex-col'>
                         <p>Disfruta de tu prenda</p>
-                        <p>Lorem</p>
                     </div>
                 </div>
             </div>
@@ -108,7 +108,7 @@ function Inicio () {
 
                             <p style={{ color: '#365780' }} className='text-2xl py-2'>Generamos proyectos textiles para otras marcas y/o artistas plásticos.</p>
                         </div>
-                        <p className='py-2 text-lg w-3/4 text-center'>El valor del diseño hace que Veruska sea distinto, hace que tengamos un producto de calidad. Diseñamos la moldería de nuestras prendas para generar moda inclusiva que tiene en cuenta todos los cuerpos y a todas las personas. También diseñamos todas las estampas que nuestras prendas contienen, las que luego serán estampadas por diferentes sistemas sobre nuestros tejidos. <b className={importantText}>Leer más {`>`}</b> </p>
+                        <p className='py-2 text-lg w-3/4 text-center'>El valor del diseño hace que Veruska sea distinto, hace que tengamos un producto de calidad. Diseñamos la moldería de nuestras prendas para generar moda inclusiva que tiene en cuenta todos los cuerpos y a todas las personas. También diseñamos todas las estampas que nuestras prendas contienen, las que luego serán estampadas por diferentes sistemas sobre nuestros tejidos. <Link to={'/nosotros'}><b className={importantText}>Leer más {`>`}</b></Link> </p>
                     </div>
 
                     <div className="flex justify-center gap-10 w-full py-10 quienes-somos-img">

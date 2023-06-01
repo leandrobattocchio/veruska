@@ -29,7 +29,7 @@ const Contacto = () => {
                 </form>
                 <div className=' bg-primary-darkerblue text-white rounded-2xl flex flex-col gap-5 items-start p-8 md:w-2/5'>
                     <p className='font-bold text-lg self-center md:text-2xl'>Nuestros medios de contacto</p>
-                    <div className='flex gap-3 items-center text-lg text-medium'><HiOutlinePhone size={26} /> <p>+54123456789</p></div>
+                    <div className='flex gap-3 items-center text-lg text-medium'><HiOutlinePhone size={26} /> <p>+54 9 2604 54-7200</p></div>
                     <div className='flex gap-3 items-center text-lg text-medium'><AiOutlineMail size={26} /> <p>ejemplo@email.com</p></div>
                     <p className='font-semibold text-lg mt-4'>Nuestras redes sociales</p>
                     <div className='flex justify-start gap-4 items-center'>

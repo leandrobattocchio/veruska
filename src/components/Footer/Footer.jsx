@@ -13,41 +13,73 @@ const Footer = () => {
                     <div className='hidden md:flex gap-4 items-center'>
                         <Link to={'https://www.facebook.com/people/Veruska-arte-y-moda/100063818371438/'} target='_blank'><AiOutlineInstagram size={36} className=' text-primary-darkerblue' /></Link>
                         <Link to={'https://www.instagram.com/veruskadiseno/?hl=es-la'} target='_blank'><BsFacebook size={30} className=' text-primary-darkerblue' /></Link>
-                        <Link to={'https://api.whatsapp.com/send?phone=54123456789'} target='_blank'><BsWhatsapp size={30} className=' text-primary-darkerblue' /></Link>
+                        <Link to={'https://api.whatsapp.com/send?phone=5492604547200'} target='_blank'><BsWhatsapp size={30} className=' text-primary-darkerblue' /></Link>
                     </div>
                 </div>
                 <div className='flex gap-5 text-base'>
                     <div className='flex flex-col text-xs md:text-base text-primary-black font-extralight'>
-                        <p className='font-semibold '>Inicio</p>
+                        <Link to={'/'} onClick={()=>window.scrollTo(0,0)}>
+                            <p className='font-semibold '>Inicio</p>
+                        </Link>
                     </div>
                     <div className='flex flex-col text-xs md:text-base text-primary-black font-extralight'>
-                        <p className='font-semibold '>Productos</p>
-                        <p>Destacados</p>
-                        <p>Nuestros</p>
+                        <Link to={'/productos'} onClick={()=>window.scrollTo(0,0)}>
+                            <p className='font-semibold '>Productos</p>
+                        </Link>
+                        <Link to={'/productos'} onClick={()=>window.scrollTo(0,0)}>
+                            <p>Destacados</p>
+                        </Link>
+                        <Link to={'/productos'} onClick={()=>window.scrollTo(0,0)}>
+                            <p>Nuestros</p>
+                        </Link>
                     </div>
                     <div className='flex flex-col text-xs md:text-base text-primary-black font-extralight'>
-                        <p className='font-semibold '>Nosotros</p>
-                        <p>Mision/Vision</p>
-                        <p>Que hacemos</p>
-                        <p>Quienes somos</p>
+                        <Link to={'/nosotros'} onClick={()=>window.scrollTo(0,0)}>
+                            <p className='font-semibold '>Nosotros</p>
+                        </Link>
+                        <Link to={'/nosotros'} onClick={()=>window.scrollTo(0,0)}>
+                            <p>Mision/Vision</p>
+                        </Link>
+                        <Link to={'/nosotros'} onClick={()=>window.scrollTo(0,0)}>
+                            <p>Que hacemos</p>
+                        </Link>
+                        <Link to={'/nosotros'} onClick={()=>window.scrollTo(0,0)}>
+                            <p>Quienes somos</p>
+                        </Link>
                     </div>
                     <div className='flex flex-col text-xs md:text-base text-primary-black font-extralight'>
-                        <p className='font-semibold '>Clientes</p>
-                        <p>Dicen de nosotros</p>
-                        <p>Colaboraciones</p>
-                        <p>Preguntas frecuentes</p>
+                        <Link to={'/clientes'} onClick={()=>window.scrollTo(0,0)}>
+                            <p className='font-semibold '>Clientes</p>
+                        </Link>
+                        <Link to={'/clientes'} onClick={()=>window.scrollTo(0,0)}>
+                            <p>Dicen de nosotros</p>
+                        </Link>
+                        <Link to={'/clientes'} onClick={()=>window.scrollTo(0,0)}>
+                            <p>Colaboraciones</p>
+                        </Link>
+                        <Link to={'/clientes'} onClick={()=>window.scrollTo(0,0)}>
+                            <p>Preguntas frecuentes</p>
+                        </Link>
                     </div>
                     <div className='flex flex-col text-xs md:text-base text-primary-black font-extralight '>
-                        <p className='font-semibold '>Contacto</p>
-                        <p>Formulario</p>
-                        <p>Medios</p>
-                        <p>Sucursal</p>
+                        <Link to={'/contacto'} onClick={()=>window.scrollTo(0,0)}>
+                            <p className='font-semibold '>Contacto</p>
+                        </Link>
+                        <Link to={'/contacto'} onClick={()=>window.scrollTo(0,0)}>
+                            <p>Formulario</p>
+                        </Link>
+                        <Link to={'/contacto'} onClick={()=>window.scrollTo(0,0)}>
+                            <p>Medios</p>
+                        </Link>
+                        <Link to={'/contacto'} onClick={()=>window.scrollTo(0,0)}>
+                            <p>Sucursal</p>
+                        </Link>
                     </div>
                 </div>
                 <div className='flex md:hidden gap-4 items-center'>
                     <Link to={'https://www.facebook.com/people/Veruska-arte-y-moda/100063818371438/'} target='_blank'><AiOutlineInstagram size={36} className=' text-primary-darkerblue' /></Link>
                     <Link to={'https://www.instagram.com/veruskadiseno/?hl=es-la'} target='_blank'><BsFacebook size={32} className=' text-primary-darkerblue' /></Link>
-                    <Link to={'https://api.whatsapp.com/send?phone=54123456789'} target='_blank'><BsWhatsapp size={32} className=' text-primary-darkerblue' /></Link>
+                    <Link to={'https://api.whatsapp.com/send?phone=5492604547200'} target='_blank'><BsWhatsapp size={32} className=' text-primary-darkerblue' /></Link>
                 </div>
             </div>
             <div className='hidden md:inline-block w-full h-px bg-primary-darkerblue'></div>
