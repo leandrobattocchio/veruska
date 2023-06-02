@@ -16,7 +16,14 @@ const Footer = () => {
                         <Link to={'https://api.whatsapp.com/send?phone=5492604547200'} target='_blank'><BsWhatsapp size={30} className=' text-primary-darkerblue' /></Link>
                     </div>
                 </div>
-                <div className='flex gap-5 text-base'>
+                <div className='flex gap-3 my-5 flex-col items-center w-full text-lg md:hidden'>
+                    <Link to={'/'} onClick={() => window.scrollTo(0, 0)}>Inicio</Link>
+                    <Link to={'/productos'} onClick={() => window.scrollTo(0, 0)}>Productos</Link>
+                    <Link to={'/nosotros'} onClick={() => window.scrollTo(0, 0)}>Nosotros</Link>
+                    <Link to={'/clientes'} onClick={() => window.scrollTo(0, 0)}>Clientes</Link>
+                    <Link to={'/contacto'} onClick={() => window.scrollTo(0, 0)}>Contacto</Link>
+                </div>
+                <div className='md:flex gap-5 text-base hidden'>
                     <div className='flex flex-col text-xs md:text-base text-primary-black font-extralight'>
                         <Link to={'/'} onClick={() => window.scrollTo(0, 0)}>
                             <p className='font-semibold '>Inicio</p>
