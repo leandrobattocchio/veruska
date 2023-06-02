@@ -1,13 +1,31 @@
-.navbarr-collapse {
+.navbar-mobile {
+    box-shadow: rgb(145, 157, 166) 0px 0px 2px 2px;
+}
+
+.display-mobile {
+    display: none;
+}
+
+.navbar-collapse {
     left: -300px;
     animation: 0.2s slide-right forwards;
     transition: ease-in;
+    margin-top: 1.5px;
+    box-shadow: rgb(145, 157, 166) 0px 0px 2px 2px;
 }
-
-
 
 .slide-right {
     animation: slide-right 0.4s linear both
+}
+
+@media screen and (max-width: 1100px) {
+    .display-mobile {
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        background-color: #fff;
+    }
 }
 
 @keyframes slide-right {

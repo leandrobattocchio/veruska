@@ -6,7 +6,7 @@ function Layout ({ children }) {
     const { pathname } = useLocation()
 
     return (
-        <div className={`md:px-36 px-5 md:py-24 py-24 ${pathname === '/' ? 'gradiente' : ''}`}>
+        <div className={`md:px-36 px-5 md:py-24 py-24 layout ${pathname === '/' ? 'gradiente' : ''}`}>
             {children}
         </div>
     )

@@ -3,6 +3,7 @@
         top: auto !important;
         bottom: 1rem;
         right: 0.5rem !important;
+        z-index: 999;
     }
 }
 
@@ -11,5 +12,6 @@
         top: auto !important;
         bottom: 1rem;
         right: 0.2rem !important;
+        z-index: 999;
     }
 }
