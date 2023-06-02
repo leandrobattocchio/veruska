@@ -12,11 +12,10 @@ const Cambios = () => {
                     <p className="text-2xl font-bold text-primary-darkblue">Cambios y devoluciones</p>
                 </div>
             </div>
-            <Accordion title={'¿Cómo puedo hacer una compra en su tienda online?'} desc={'Lorem ipsum dolor sit amet consectetur. Aliquet ultrices maecenas eget varius. Convallis dolor semper cras id odio vitae mattis ut nisl. Vitae tempor elit tempor risus etiam adipiscing faucibus sit rhoncus. Nibh nullam nibh mi aliquet lectus. Ornare morbi sed.'} />
-            <Accordion title={'¿Cómo puedo pagar mi compra?'} desc={'Lorem ipsum dolor sit amet consectetur. Aliquet ultrices maecenas eget varius. Convallis dolor semper cras id odio vitae mattis ut nisl. Vitae tempor elit tempor risus etiam adipiscing faucibus sit rhoncus. Nibh nullam nibh mi aliquet lectus. Ornare morbi sed.'} />
-            <Accordion title={'¿Cuánto tiempo tarda en llegar mi pedido?'} desc={'Lorem ipsum dolor sit amet consectetur. Aliquet ultrices maecenas eget varius. Convallis dolor semper cras id odio vitae mattis ut nisl. Vitae tempor elit tempor risus etiam adipiscing faucibus sit rhoncus. Nibh nullam nibh mi aliquet lectus. Ornare morbi sed.'} />
-            <Accordion title={'¿Puedo hacer un cambio o devolución de mi compra?'} desc={'Lorem ipsum dolor sit amet consectetur. Aliquet ultrices maecenas eget varius. Convallis dolor semper cras id odio vitae mattis ut nisl. Vitae tempor elit tempor risus etiam adipiscing faucibus sit rhoncus. Nibh nullam nibh mi aliquet lectus. Ornare morbi sed.'} />
-            <Accordion title={'¿Cómo puedo hacer una compra en su tienda online?'} desc={'Lorem ipsum dolor sit amet consectetur. Aliquet ultrices maecenas eget varius. Convallis dolor semper cras id odio vitae mattis ut nisl. Vitae tempor elit tempor risus etiam adipiscing faucibus sit rhoncus. Nibh nullam nibh mi aliquet lectus. Ornare morbi sed.'} />
+            <Accordion title={'¿Existe una sección de contacto en la tienda Veruska?'} desc={'Sí, puedes encontrar todos los datos de contacto de Veronica en la sección de contacto de la página web de Veruska.'} />
+            <Accordion title={'¿Cómo puedo saber si los talles son reales o comerciales?'} desc={'Tenemos las medidas reales de todos los talles en comparación con los talles comerciales. Te recomendamos ponerte en contacto con Veronica para obtener más información.'} />
+            <Accordion title={'¿Cómo puedo contactar con el servicio al cliente de Veruska?'} desc={'Para cualquier consulta o solicitud de ayuda, puedes contactar directamente a Veronica, la dueña de Veruska. Ella estará encantada de brindarte la asistencia que necesites.'} />
+            
 
         </>
     )
