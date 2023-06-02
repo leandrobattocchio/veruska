@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom"
-import { CancelIcon, CollapseIcon, HeartIcon } from "../../../Icons"
+import { CollapseIcon, HeartIcon } from "../../../Icons"
 import { useState } from "react"
 import logo from '../../../../assets/logo.png'
 import './NavbarCollapse.css'
@@ -15,8 +15,8 @@ function NavbarCollapse () {
     }
 
     return (
-        <>
-            <div className="flex flex-col navbar-collapse w-full z-55 fixed" style={{ boxShadow: '0px 0px 2px 2px #919da6', color: '#233556', backgroundColor: '#fff' }}>
+        <div className="display-mobile">
+            <div className="flex flex-col w-full navbar-mobile">
                 <div className="flex justify-between p-4">
                     <div className="flex gap-4">
                         <div className="flex items-center cursor-pointer" onClick={handleCollapse}>
@@ -32,8 +32,7 @@ function NavbarCollapse () {
             </div>
             {
                 showCollapse && (
-                    <div className="flex flex-col items-start gap-0.5 font-black gap-1 text-xl p-4 fixed w-2/3 h-full navbar-collapse z-55" style={{ backgroundColor: '#dddddd' }}>
-                        <button className="self-start pt-4" onClick={handleCollapse}><CancelIcon /></button>
+                    <div className="flex flex-col items-start gap-0.5 font-black gap-1 text-xl p-4 fixed w-2/3 h-full navbar-collapse z-50 " style={{ backgroundColor: '#fff' }}>
                         <div className="flex flex-col pl-1">
                             <Link onClick={handleCollapse} className={`${hoverAnchor} ${'/' === pathname ? 'border-b-4 border-indigo-900' : ''}`} to='/'>Inicio</Link>
                             <Link onClick={handleCollapse} className={`${hoverAnchor} ${'/productos' === pathname ? 'border-b-4 border-indigo-900' : ''}`} to='/productos'>Productos</Link>
@@ -44,7 +43,7 @@ function NavbarCollapse () {
                     </div>
                 )
             }
-        </>
+        </div>
     )
 }
 

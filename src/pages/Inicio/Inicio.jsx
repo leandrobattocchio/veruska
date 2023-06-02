@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom'
 
 const importantText = 'text-primary-darkblue'
 
-function Inicio() {
+function Inicio () {
 
     useEffect(() => {
         window.scrollTo(0, 0);
