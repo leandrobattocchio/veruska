@@ -17,15 +17,3 @@
   }
 
 }
-
-@media screen and (max-width: 280px) {
-
-  .faq {
-    display: none !important;
-  }
-
-  .destacados {
-    flex-direction: column;
-  }
-
-}
