@@ -2,9 +2,15 @@ import ClientSlider from "../../components/ClientsSlider/ClientSlider"
 import Faq from "../../components/FAQ/FAQ"
 import Alados from "../../components/Colaborations/Alados"
 import Mancino from "../../components/Colaborations/Mancino"
+import { useEffect } from "react"
 
 
 function Clientes () {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return (
         <div className="w-full px-5 md:px-0 flex flex-col items-center ">
             <div className="flex flex-col items-center md:items-start gap-4">

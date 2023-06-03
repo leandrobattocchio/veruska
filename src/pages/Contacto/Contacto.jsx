@@ -3,8 +3,14 @@ import { AiOutlineMail, AiOutlineInstagram } from 'react-icons/ai'
 import { BsFacebook, BsWhatsapp } from 'react-icons/bs'
 import { SlLocationPin } from 'react-icons/sl'
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 
 const Contacto = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return (
         <div className='flex flex-col items-center px-5 gap-5 md:px-0'>
             <div className='flex flex-col items-center md:items-start gap-3 mb-5 w-full'>
