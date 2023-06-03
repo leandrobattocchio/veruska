@@ -24,10 +24,6 @@ function NavbarCollapse () {
                         </div>
                         <img src={logo} className="w-34 h-10" />
                     </div>
-                    <div className="flex justify-center items-center gap-2">
-                        <HeartIcon />
-                        <p className="font-black text-lg">Favoritos</p>
-                    </div>
                 </div>
             </div>
             {
